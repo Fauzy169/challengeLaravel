@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Models\Product;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 
 Route::get('/', function () {
@@ -16,9 +17,11 @@ Route::get('/shop', function() {
     return view('shop', ['title' => 'Shop Homepage']);
 });
 
-Route::get('/products/{slug}', function($slug) {
+Route::get('/products/{product:slug}', function(Product $product) {
 
-    $product = Product::find($slug);
 
     return view('product', ['title' => 'Halaman Product', 'product' => $product]);
 });
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index']);
