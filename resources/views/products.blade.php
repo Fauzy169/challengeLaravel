@@ -1,13 +1,12 @@
 <x-layout>
     
     <x-slot:title>{{ $title }}</x-slot:title>
-    
-  
+
     <div class="bg-white py-2 sm:py-10">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
             <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">What's New !?</h2>
-            <p class="mt-2 text-lg/8 text-gray-600">Dapatkan berita terbaru dan informasi update sehari-hari</p>
+            <p class="mt-2 text-lg/8 text-gray-600">Dapatkan Produk terbaru dan barang murah setiap harinya</p>
           </div>
           <div class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-5 sm:pt-5 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 

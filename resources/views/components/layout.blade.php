@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="//unpkg.com/alpinejs" defer></script>
-    <title>Document</title>
+    <title>Laravel's Challenge</title>
 </head>
 <body class="h-full">
 <div class="min-h-full">
