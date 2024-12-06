@@ -5,14 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    
-    public function index() {
-        
+    public function index()
+    {
         return view('dashboard.index');
     }
 
@@ -21,7 +20,7 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        //
+        return view ('products.create');
     }
 
     /**
