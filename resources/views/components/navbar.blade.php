@@ -10,6 +10,7 @@
                       <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                       <x-nav-link href="/products" :active="request()->is('products')">Product</x-nav-link>
                       <x-nav-link href="/shop" :active="request()->is('shop')">Shop</x-nav-link>
+                      <x-nav-link href="/post" :active="request()->is('post')">Post</x-nav-link>
                   </div>
               </div>
           </div>

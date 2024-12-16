@@ -6,7 +6,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use App\Http\Controllers\DashboardController;
+use App\Models\Draggable;
 use App\Models\User;
+use App\Http\Controllers\DraggableController;
 
 Route::get('/', function () {
     return view('home', ['title' => 'Dasboard Home', 'user' => User::all()]);
@@ -31,3 +33,4 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/post', [DraggableController::class, 'index'])->name('post')->middleware('auth');;
